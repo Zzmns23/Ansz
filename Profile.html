@@ -1,0 +1,357 @@
+<html>
+<head>
+    <title>About Me</title>
+</head>
+
+<style>
+
+    body 
+    {
+        background: #2c0f0f;
+        margin: 0;
+        font-family: "Playfair Display", serif;
+        color: #f3d7c6;
+    }
+
+    a 
+    {
+        text-decoration: none;
+        color: #ffb88c;
+        transition: 0.25s ease;
+    }
+
+    a:hover 
+    {
+        color: #ffffff;
+    }
+
+    .menu 
+    {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 22px 0;
+        background: #3b1815;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 12px 35px rgba(0,0,0,0.45);
+    }
+
+    .menu a 
+    {
+        font-size: 16px;
+        letter-spacing: 1.2px;
+        color: #f3d7c6;
+    }
+
+    .menu a:hover 
+    {
+        color: #ffb88c;
+    }
+
+
+    .hero 
+    {
+        position: relative;
+        height: 80vh;
+        width: 100%;
+    }
+
+    .hero img 
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(45%);
+        border-radius: 10px;
+    }
+
+    .hero-text 
+    {
+        position: absolute;
+        left: 40px;
+        bottom: 180px;
+    }
+
+    .hero-title 
+    {
+        font-size: 54px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-shadow: 0 0 18px rgba(255,184,140,0.3);
+    }
+
+    .info 
+    {
+        font-size: 44px;
+        color: #ffb88c;
+        margin-left: 80px;
+        letter-spacing: 1px;
+    }
+
+    .desc 
+    {
+        margin-left: 40px;
+        width: 70%;
+        line-height: 1.8;
+        color: #d6c8b9;
+    }
+
+    .black-box { height: 100px; }
+    .space { height: 70px; }
+
+    table 
+    {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 15px;
+    }
+
+    .card 
+    {
+        background: #3b1815;
+        border-radius: 14px;
+        padding: 22px;
+        box-shadow: 0 18px 45px rgba(0,0,0,0.45);
+    }
+
+
+    .biodata-title 
+    {
+        color: #ffb88c;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    .biodata-text 
+    {
+        margin-top: 15px;
+        color: #d6c8b9;
+        font-size: 14px;
+    }
+
+    .section-title 
+    {
+        text-align: center;
+        font-size: 46px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .sub-title 
+    {
+        font-size: 30px;
+        color: #ffb88c;
+    }
+
+    ul 
+    {
+        color: #d6c8b9;
+        line-height: 1.7;
+    }
+
+
+    .personality-title 
+    {
+        font-size: 60px;
+        margin-left: 20px;
+        letter-spacing: 2px;
+        text-shadow: 0 0 20px rgba(255,184,140,0.25);
+    }
+
+    .trait-title 
+    {
+        text-align: center;
+        font-size: 24px;
+        color: #ffb88c;
+    }
+
+    .trait-text 
+    {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #d6c8b9;
+    }
+
+    img 
+    {
+        border-radius: 14px;
+    }
+
+    .nav
+    {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        font-size: 13px;
+        margin-bottom: 25px;
+        letter-spacing: 1.2px;
+    }
+
+    .footer-copyright 
+    {
+        background: #1a0a0a;
+        color: #d6c8b9;
+        text-align: center;
+        padding: 16px 0;
+        margin-top: 40px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 12px;
+        letter-spacing: 1.4px;
+    }
+    </style>
+
+<body link="red" vlink="grey" alink="black">
+
+        <a name="menu">
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="Experience.html">Experience</a>
+                <a href="Education.html">Education</a>
+                <a href="Passion.html">Passion</a>
+                <a href="contact.html">Contact</a>
+                <a href="Gallery.html">Gallery</a>
+            </div>
+        </a>
+
+        <a name="intro">
+            <div class="hero">
+                <img src="images/me review photos.jpeg">
+                <div class="hero-text">
+                    <div class="hero-title">ABOUT ME</div>
+                    <div class="info">ZAM ANIS ZULAIKHA</div>
+                    <div class="desc">" Welcome To My Life History "</div>
+                </div>
+            </div>
+
+            <table>
+            <tr>
+                <td class="card">
+                    <div class="biodata-title">FULL NAME</div>
+                    <div class="biodata-text">Zam Anis Zulaikha Binti Zamzuri</div>
+                </td>
+                <td class="card">
+                    <div class="biodata-title">DATE OF BIRTH</div>
+                    <div class="biodata-text">23rd August 2005</div>
+                </td>
+                <td class="card">
+                    <div class="biodata-title">HOMETOWN</div>
+                    <div class="biodata-text">Shah Alam</div>
+                </td>
+                <td class="card">
+                    <div class="biodata-title">OCCUPATION</div>
+                    <div class="biodata-text">Diploma in Information Management Student</div>
+                </td>
+            </tr>
+            </table>
+        </a>
+
+        <div class="black-box"></div>
+
+        <a name="middle">
+            <table>
+            <tr>
+                <td class="card" width="50%">
+                    <div class="section-title">LIFE STORY</div>
+                    <table width="100%">
+                    <tr>
+                        <td align="center">
+                            <div class="sub-title">FAMILY</div>
+                            <ul>
+                                <li>Parents : Mother in her 40's</li>
+                                <li>Siblings : A brother that is 5 years younger </li>
+                                <li>Father passed away in 2020</li>
+                            </ul>
+                        </td>
+                        <td align="center">
+                            <div class="sub-title">HIGHLIGHTS</div>
+                            <ul>
+                                <li>Exploring new hobbies</li>
+                                <li>Skill development</li>
+                                <li>Emotional growth</li>
+                                <li>Self-discovery</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+                <td width="50%">
+                    <img src="images/Black Brown Doodle Illustrative Board Project Review Report Animated Business Presentation (1).jpg"
+                        width="100%" height="100%">
+                </td>
+            </tr>
+            </table>
+        </a>
+
+        <a name="personality">
+            <div class="space">
+                <div class="personality-title">MY PERSONALITY TRAITS</div>
+            </div>
+
+            <table>
+            <tr>
+                <td width="25%" class="card" align="center">
+                    <img src="images/work.jpeg" width="280" height="170">
+                </td>
+                <td width="75%">
+                    <table width="100%">
+                    <tr>
+                        <td class="card">
+                            <div class="trait-title">RESPONSIBLE</div>
+                            <div class="trait-text">I meet deadlines and honour commitments responsibly, managing my time effectively and staying well organized. 
+                                I approach tasks with discipline and focus, ensuring quality work while remaining reliable and accountable in everything I do. 
+                            </div>
+                        </td>
+                        <td class="card">
+                            <div class="trait-title">ADAPTABLE</div>I am comfortable adjusting to new environments and can adapt quickly to change. I remain open-minded and flexible, allowing me to learn easily and work well in different situations.
+                                    I am comfortable adjusting to new environments and adapt quickly to change while remaining confident and open to learning.
+                            </div>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+            </tr>
+            </table>
+
+            <table>
+            <tr>
+                <td width="75%">
+                    <table width="100%">
+                    <tr>
+                        <td class="card">
+                            <div class="trait-title">DETAIL-ORIENTED</div>
+                            <div class="trait-text">Strong attention to detail allows me to produce accurate and well-organized work. 
+                                I carefully review each task to ensure consistency, quality, and professionalism in the final outcome.
+                            </div>
+                        </td>
+                        <td class="card">
+                            <div class="trait-title">FRIENDLY</div>
+                            <div class="trait-text">Approachable, calm, and respectful in communication, I interact with others in a friendly and professional manner. 
+                                I listen attentively, respond thoughtfully, and maintain positive relationships in both team and individual settings.
+                            </div>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+                <td width="25%" class="card" align="center">
+                    <img src="images/class.jpeg" width="280" height="170">
+                </td>
+            </tr>
+            </table>
+        </a>
+
+        <div class="nav" >
+                <a href="#menu"><p> Menu </p></a>
+                <a href="#intro"><p> Intro </p></a>
+                <a href="#middle"><p>  Life Story </p></a>
+                <a href="#personality"><p> Personality </p></a>  
+        </div>
+
+        <div class="footer-copyright">
+            &copy; 2025 Ansz's Universe. All Rights Reserved.
+        </div>
+
+</body>
+</html>

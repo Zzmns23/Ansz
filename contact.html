@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Contact</title>
+    </head>
+
+<style>
+
+        body {
+            background: #2c0f0f;
+            color: #f3d7c6; 
+            margin: 0;
+            font-family: "Playfair Display", serif;
+        }
+
+         a:link
+        {
+            text-decoration: none;
+            color: #ffb88c; 
+        }
+
+        .logo 
+        {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 26px;
+            color: #ffb88c; 
+            letter-spacing: 2px;
+            font-weight: bold;
+            z-index: 9999;
+        }
+
+        .hero 
+        {
+            height: 55vh;
+            background: url('hero.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-overlay 
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+        }
+
+        .hero h1 
+        {
+            position: relative;
+            font-size: 56px;
+            color: #f3d7c6;
+            letter-spacing: 2px;
+            margin: 0;
+            text-transform: none;
+        }
+
+        .contact-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 80px 10%;
+            gap: 40px;
+        }
+
+        .left-box { max-width: 560px; }
+
+        .subtitle 
+        {
+            color: #ffb88c; 
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .left-box h2 
+        {
+            font-size: 40px;
+            margin: 6px 0 18px 0;
+            line-height: 1.05;
+            color: #f3d7c6;
+        }
+
+        .desc 
+        {
+            color: #d6c8b9; 
+            line-height: 1.6;
+            margin-bottom: 28px;
+            max-width: 460px;
+        }
+
+        .contact-list p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #f3d7c6;
+            margin-left: 5px;
+            gap: 10px;
+        }
+
+        .contact-list span 
+        {
+            color: #ffb88c;
+            margin-right: 10px;
+            display: inline-block;
+            min-width: 22px;
+        }
+
+        .right-box form 
+        {
+            display: flex;
+            flex-direction: column;
+            width: 420px;
+            min-width: 260px;
+        }
+
+        .right-box textarea,
+        .right-box input 
+        {
+            background: transparent;
+            border: 1px solid #5c2a2a; 
+            padding: 14px;
+            margin-bottom: 14px;
+            color: #f3d7c6;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .right-box textarea { height: 120px; resize: none; }
+
+        .right-box input::placeholder,
+        .right-box textarea::placeholder 
+        {
+            color: #b9a18f; 
+        }
+
+        .right-box button 
+        {
+            background: linear-gradient(120deg, #ffb88c, #6b4a33);
+            border: none;
+            color: #fff;
+            padding: 14px;
+            cursor: pointer;
+            font-size: 15px;
+            letter-spacing: 1px;
+            transition: transform .12s ease, opacity .12s ease;
+        }
+
+        .right-box button:hover { transform: translateY(-2px); opacity: 0.95; }
+
+        .footer 
+        {
+            background: #1a0a0a; 
+            padding: 60px 10%;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-col { min-width: 180px; }
+
+        .footer h3 
+        {
+            color: #ffb88c;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .footer p 
+        {
+            color: #f3d7c6;
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        /* Small screens */
+        @media (max-width: 900px) 
+        {
+            .contact-area {
+                flex-direction: column;
+                padding: 48px 6%;
+            }
+            .right-box form { width: 100%; }
+            .hero h1 { font-size: 40px; padding: 0 16px; text-align: center; }
+            .footer { padding: 40px 6%; }
+        }
+
+        .footer-copyright
+        {
+            background: #1a0a0a;
+            color: #d6c8b9;
+            text-align: center;
+            padding: 14px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+            letter-spacing: 1.4px;
+        }
+
+
+</style>
+
+<body link="red" vlink="grey" alink="black">
+
+        <div class="logo">AnsZ</div>
+
+       
+        <div class="hero">
+            <div class="hero-overlay"></div>
+            <h1>MY CONTACT INFO</h1>
+        </div>
+
+        
+        <div class="contact-area">
+
+            <div class="left-box">
+                <p class="subtitle">Contact Me</p>
+                <h2>Get in touch</h2>
+
+                <p class="desc">
+                    You are welcome to ask any questions, inquiries or offers — I'll get back to you as soon as possible.
+                </p>
+
+                <div class="contact-list">
+                    <p>Email:</p> <p> <img width="15" height="15" src="buttons/Icon gmail.jpg"><a href="mailto: zanazai313@gmail.com">zanazai313@gmail.com </p></a>
+                    <p>Call:</p> <p> <img width="15" height="15" src="buttons/call.jpg"><a href="tel:+60166904330"> +016 690 4330 </p></a>
+                    <p>WhatsApp:</p> <p> <img width="15" height="15" src="buttons/Baixar logotipo preto do whatsapp, ícone preto do whatsapp vetor grátis.jpg"><a href="https://wa.me/+60166904330">+016 690 4330 </p></a>
+                </div>
+            </div>
+
+            <div class="right-box">
+                <form action="mailto:zanazai313@gmail.com" method="post" enctype="text/plain">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="contact" name="contact" placeholder="Your Contact Number">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+    
+        <div class="footer">
+
+            <div class="footer-col">
+                <h3> Follow Me </h3>
+                
+                <p> Instagram <img width="20" height="20" src="buttons/instagram (2).jpg"><a href="https://www.instagram.com/ansz.23?igsh=MW5mb3gybzFyYnprdw%3D%3D&utm_source=qr"></a></p>
+                <p> TikTok <img width="20" height="20" src="buttons/tiktok (1).jpg"><a href="https://www.tiktok.com/@nisee_me?_r=1&_t=ZS-921p698QtqH"></a></p>
+                <p> Pinterest <img width="20" height="20" src="buttons/pinterest.jpg"><a href="https://pin.it/2KljMGBs6"></a></p>
+                
+            </div>
+
+            <div class="footer-col">
+                <h3>Chapters</h3>
+                <p><a href="index.html"> Home </a></p>
+                <p><a href="Profile.html"> About Me </a></p>
+                <p><a href="contact.htmlt"> Contact </a></p>
+                <p><a href="Education.html"> Education </a></p>
+                <p><a href="Experience.html"> Experience </a></p>
+                <p><a href="Gallery.html"> Gallery </a></p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Available hours</h3>
+                <p>Mon – Fri: 10:00am – 10:00pm</p>
+                <p>Sat – Sun: 10:00am – 02:00pm</p>
+                <h3>Location</h3>
+                <p>
+                    <img src="images/pangsapuri suria subang.png"  usemap="#image-map">
+                    <map name="image-map">
+                                <area target="_blank" alt="Pangsapuri Suria Subang" title="Pangsapuri Suria Subang" href="https://maps.app.goo.gl/LfsbWYvJcahV9nZK7" coords="146,92,171,109" shape="rect">
+                    </map>
+
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-copyright">
+            &copy; 2025 Ansz's Universe. All Rights Reserved.
+        </div>
+
+
+</body>
+</html>
